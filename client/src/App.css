@@ -1,0 +1,806 @@
+ /* todo-list css */
+span{
+  display: inline-block;
+}
+
+.list-item :hover{
+cursor: pointer
+}
+
+
+/* food order app - Swiggy CSS */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.header-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link styling */
+.header-list a {
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header-list a:hover {
+  color: #16a34a;
+}
+
+/* User icon */
+.header-list li img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.body-container{
+  margin-top: 30px;
+}
+.search-input{
+  margin:20px 20px;
+  width: 50%;     /* controls length */
+  height: 40px;     /* controls height */
+  padding: 0 15px;  /* space inside */
+  font-size: 16px;
+   border: 0px;
+   background-color: rgb(193, 201, 207);
+}
+.search-input::placeholder{
+  color: white;
+}
+.input-search-button{
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(193, 201, 207);
+  color: white;
+}
+.input-search-button:hover{
+  background-color: rgb(193, 201, 207);
+  color: black;
+  cursor: pointer;
+  border: #ddd solid 2px;
+}
+
+.restuarant-card-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  gap: 20px;
+  padding: 20px 15px;
+  
+}
+
+.restuarant-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  background: white;
+  height: max-content;
+}
+.restuarant-card:hover{
+  box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.restuarant-image{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.restuarant-cuisine,
+.restuarant-rating,
+.restuarant-area,
+.restuarant-cost,
+.restuarant-delivery-time{
+  font-size: smaller;
+ font-family: serif;
+ color: black;
+ display: block;
+ margin: 5px 0;
+
+}
+.shimmer-wrapper{
+   display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  gap: 20px;
+  padding: 20px 15px;
+
+}
+
+.shimmer-cards {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  background: white;
+  height: 200px;
+  width: 250px;
+}
+
+.restuarant-card-link {
+  text-decoration: none;   /* remove blue underline */
+  color: inherit;          /* keep text same color */
+}
+
+.restuarant-card-link:hover {
+  text-decoration: none;
+}
+
+
+/* //for menu page */
+
+/* ===== MENU PAGE ===== */
+.menu-page {
+  padding: 30px 60px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* Restaurant name heading */
+.menu-page h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* ===== MENU CARD ===== */
+.menu-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Item name */
+.menu-card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Description */
+.menu-card p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Price */
+.menu-card p:last-child {
+  font-weight: 700;
+  font-size: 16px;
+  color: #e63946;
+}
+
+
+.page-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.about-card {
+  background: white;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.page-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-card {
+  background: white;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e60000;
+}
+
+/* CART FUNCTIONALITY CSS */
+.add-to-cart-btn {
+  margin-top: 10px;
+  background: white;
+  color: green;
+  border: 1px solid green;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.add-to-cart-btn:hover {
+  background: rgba(245, 245, 245, 0.731);
+}
+/* Overlay background */
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal card */
+.confirm-card {
+  background: #ffffff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: scaleIn 0.2s ease-in-out;
+}
+
+/* Small animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Title */
+.confirm-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Item name */
+.confirm-item-name {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* Item price */
+.confirm-item-price {
+  font-weight: bold;
+  color: #16a34a;
+  margin-bottom: 20px;
+}
+
+/* Button container */
+.confirm-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Cancel button */
+.cancel-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: #f5f5f5;
+}
+
+/* Confirm button */
+.confirm-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #16a34a;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.confirm-btn:hover {
+  background: #15803d;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #16a34a;
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  box-sizing: border-box; 
+  overflow: hidden;      
+}
+
+/* View Cart button */
+.view-cart-btn {
+  background: white;
+  color: #16a34a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.view-cart-btn:hover {
+  background: #f0fdf4;
+  transform: translateY(-1px);
+}
+
+/* cart page css */
+/* Page container */
+.cart-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+/* Title */
+.cart-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Empty message */
+.empty-cart {
+  font-size: 18px;
+  color: gray;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Cart items container */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Individual cart card */
+.cart-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+/* Left info */
+.cart-info h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.cart-info p {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* Quantity section */
+.cart-qty {
+  font-size: 16px;
+  font-weight: 600;
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Total section */
+.cart-total {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Quantity control container */
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Quantity number */
+.cart-qty-text {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 25px;
+  text-align: center;
+}
+
+/* Common button styling */
+.add-qty-btn,
+.remove-item-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Plus button */
+.add-qty-btn {
+  background-color: #16a34a;
+  color: white;
+}
+
+.add-qty-btn:hover {
+  background-color: #15803d;
+}
+
+/* Minus button */
+.remove-item-btn {
+  background-color: #e5e7eb;
+  color: #111;
+}
+
+.remove-item-btn:hover {
+  background-color: #d1d5db;
+}
+
+
+/* Checkout button */
+.checkout-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background: #15803d;
+}
+
+
+/* order placed modal css */
+
+/* Overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal-container {
+  background: #ffffff;
+  width: 400px;
+  max-width: 90%;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Title */
+.modal-title {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.modal-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Item list */
+.modal-items {
+  margin-bottom: 15px;
+}
+
+.modal-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Total */
+.modal-total {
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Close button */
+.modal-close-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-close-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* replace cart modal css */
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal-container {
+  background: white;
+  padding: 24px;
+  width: 350px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Buttons */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background: #ccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.replace-btn {
+  padding: 8px 16px;
+  background: #fc8019;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* cart replaced pop up */
+.replace-alert {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  animation: fadeSlide 0.3s ease-in-out;
+  z-index: 2000;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* login page */
+/* Full page center */
+.login-page {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* Card container */
+.login-card {
+  background: white;
+  padding: 40px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form layout */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.login-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #ff4d4f;
+  outline: none;
+}
+
+/* Button */
+.login-btn {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ff4d4f;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #e63946;
+}
+
+
+
+
